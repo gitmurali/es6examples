@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script type="text/babel">
+
+		//	old way
+//		var studentList = function(students){
+//		    console.log(students);
+//		};
+
+
+		// new es6 way
+		var studentList = students => console.log(students);
+        var greeting = (fname, lname) => console.log(`Olaa!! ${lname}, ${lname}`);
+
+		studentList(["Joe", "Cindy", "Jeanne"]);
+        greeting("Murali", "Nutalapati");
+	
+	</script>
+	<title>Arrow Functions</title>
+</head>
+<body>
+</body>	
+</html>
