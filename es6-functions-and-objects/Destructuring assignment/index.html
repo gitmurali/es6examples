@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+	<script type="text/babel">
+
+        // example 1
+		var [first,,,fourth] = ["murali","prashanth","candy","sometext"];
+		console.log(first);
+        console.log(fourth);
+
+        // example 2
+        var {title,lname} = {
+            title: "Mr.",
+			prce: "3434232323",
+			fname: "Murali",
+			lname: "Nutalapati"
+		}
+		console.log(title);console.log(lname);
+
+        // example 3
+		var vacation = {
+			destination: "Chile",
+			travelers: 2,
+			activity: "skiing",
+			cost: 4000
+		};
+
+		function vacationMarketing({destination, activity}) {
+			return `Come to ${destination} and do some ${activity}`
+		}
+
+		console.log(vacationMarketing(vacation));
+
+	</script>
+	<title>Destructuring Assignment</title>
+</head>
+<body>
+</body>	
+</html>
